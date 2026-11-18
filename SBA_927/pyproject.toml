@@ -1,0 +1,22 @@
+[project]
+name = "sba-927"
+version = "0.1.0"
+description = "Business Text Analytics Natural Language Processing (NLP) pipeline using NLTK, spaCy, and Hugging Face Transformers for sentiment analysis, NER, and POS tagging."
+readme = "README.md"
+authors = [
+    { name = "MichaelKearns568", email = "mkaipromptengineeringps@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "nltk>=3.10.4",
+    "spacy>=3.8.18",
+    "torch>=2.15.0",
+    "transformers>=5.23.0",
+]
+
+[project.scripts]
+sba-927 = "sba_927:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
